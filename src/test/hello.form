@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="test.hello">
+  <grid id="27dc6" binding="root" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="c2279" binding="tip" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="d57ac" class="javax.swing.JTextField" binding="add1">
+            <constraints/>
+            <properties>
+              <columns value="4"/>
+              <editable value="true"/>
+              <enabled value="true"/>
+            </properties>
+            <clientProperties>
+              <caretWidth class="java.lang.Integer" value="20"/>
+            </clientProperties>
+          </component>
+          <component id="2fa4b" class="javax.swing.JComboBox" binding="symbol">
+            <constraints/>
+            <properties>
+              <model>
+                <item value="+"/>
+                <item value="-"/>
+                <item value="*"/>
+                <item value="/"/>
+              </model>
+            </properties>
+          </component>
+          <component id="26f5b" class="javax.swing.JTextField" binding="add2">
+            <constraints/>
+            <properties>
+              <columns value="4"/>
+            </properties>
+            <clientProperties>
+              <caretWidth class="java.lang.Integer" value="20"/>
+            </clientProperties>
+          </component>
+          <component id="37a93" class="javax.swing.JButton" binding="clear">
+            <constraints/>
+            <properties>
+              <text value="清空历史记录"/>
+            </properties>
+          </component>
+          <component id="1856d" class="javax.swing.JLabel" binding="wrongtext">
+            <constraints/>
+            <properties>
+              <text value="错误题数："/>
+            </properties>
+          </component>
+          <component id="7be04" class="javax.swing.JLabel" binding="wrongnums">
+            <constraints/>
+            <properties>
+              <text value="00"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="64451" class="javax.swing.JTextArea" binding="resultarea">
+        <constraints border-constraint="Center"/>
+        <properties/>
+      </component>
+      <grid id="bb326" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="86eb7" class="javax.swing.JLabel" binding="answertext">
+            <constraints/>
+            <properties>
+              <text value="你的答案："/>
+            </properties>
+          </component>
+          <component id="c7334" class="javax.swing.JTextField" binding="answeredit">
+            <constraints/>
+            <properties>
+              <columns value="4"/>
+            </properties>
+          </component>
+          <component id="e8fa" class="javax.swing.JButton" binding="ok">
+            <constraints/>
+            <properties>
+              <text value="核对"/>
+            </properties>
+          </component>
+          <component id="261e3" class="javax.swing.JLabel" binding="righttext">
+            <constraints/>
+            <properties>
+              <text value="正确题数："/>
+            </properties>
+          </component>
+          <component id="9f4cf" class="javax.swing.JLabel" binding="rightnums">
+            <constraints/>
+            <properties>
+              <text value="00"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
